@@ -9,17 +9,15 @@ import logo from "../../public/images/logo.png";
 
 const NavBar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="sticky" color="transparent">
-        <Toolbar>
-          <Image src={logo} alt="icon" width={50} height={50} />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            ICON
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <AppBar position="sticky" color="transparent">
+      <Toolbar>
+        <Image src={logo} alt="icon" width={50} height={50} />
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          ICON
+        </Typography>
+        <Button color="inherit">Login</Button>
+      </Toolbar>
+    </AppBar>
   );
 };
 export default NavBar;
