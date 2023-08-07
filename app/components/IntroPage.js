@@ -1,15 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import avatar from "../../public/images/avatar.png";
+import cyberCityDivder from "../../public/images/cyberCityDivider.png";
 
 const IntroPage = () => {
   return (
     <>
       <div>
-        <div>
-          <h1>My name is Muizz Jakhar I am a Full-stack Web Developer</h1>
+        <div className="flex">
+          <h1 className="flex-auto">
+            My name is Muizz Jakhar I am a Full-stack Web Developer
+          </h1>
+          <Image src={avatar} alt="Muizz Jakhar Avatar" />
         </div>
-        <Image src={avatar} alt="Muizz Jakhar Avatar" />
+        <div>
+          <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
+        </div>
       </div>
     </>
   );
