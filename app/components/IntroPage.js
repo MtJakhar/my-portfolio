@@ -10,22 +10,18 @@ const IntroPage = () => {
     <>
       <div>
         <NavBar />
-        <div>
-          <Image
-            className="w-full"
-            src={cyberCityDivder2}
-            alt="top city divider"
-          />
-        </div>
+        <Image
+          className="w-full"
+          src={cyberCityDivder2}
+          alt="top city divider"
+        />
         <div className="flex">
           <h1 className="flex-auto">
             My name is Muizz Jakhar I am a Full-stack Web Developer
           </h1>
           <Image src={avatar} alt="Muizz Jakhar Avatar" />
         </div>
-        <div>
-          <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
-        </div>
+        <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
       </div>
     </>
   );
