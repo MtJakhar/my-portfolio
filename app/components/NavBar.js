@@ -12,7 +12,7 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="sticky" color="transparent">
         <Toolbar>
-          <Image src={logo} width={50} height={50} />
+          <Image src={logo} alt="icon" width={50} height={50} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             ICON
           </Typography>
