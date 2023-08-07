@@ -1,12 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import NavBar from "./NavBar";
 import avatar from "../../public/images/avatar.png";
 import cyberCityDivder from "../../public/images/cyberCityDivider.png";
+import cyberCityDivder2 from "../../public/images/cyberCityDivider2.png";
 
 const IntroPage = () => {
   return (
     <>
       <div>
+        <NavBar />
+        <div>
+          <Image
+            className="w-full"
+            src={cyberCityDivder2}
+            alt="top city divider"
+          />
+        </div>
         <div className="flex">
           <h1 className="flex-auto">
             My name is Muizz Jakhar I am a Full-stack Web Developer

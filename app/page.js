@@ -1,10 +1,11 @@
 "use client";
 import IntroPage from "./components/IntroPage";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
+
 export default function Home() {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <IntroPage />
     </div>
   );
