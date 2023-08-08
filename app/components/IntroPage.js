@@ -5,6 +5,7 @@ import avatar from "../../public/images/avatar.png";
 import cyberCityDivder from "../../public/images/cyberCityDivider.png";
 import cyberCityDivder2 from "../../public/images/cyberCityDivider2.png";
 import crypticText from "../../public/images/crypticText.png";
+import Skills from "./Skills";
 
 const IntroPage = () => {
   return (
@@ -24,6 +25,7 @@ const IntroPage = () => {
         </div>
         <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
         <Image src={crypticText} alt="crypticText" />
+        <Skills />
       </div>
     </>
   );
