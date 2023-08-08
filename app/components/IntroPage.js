@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import avatar from "../../public/images/avatar.png";
 import cyberCityDivder from "../../public/images/cyberCityDivider.png";
 import cyberCityDivder2 from "../../public/images/cyberCityDivider2.png";
+import crypticText from "../../public/images/crypticText.png";
 
 const IntroPage = () => {
   return (
@@ -22,6 +23,7 @@ const IntroPage = () => {
           <Image src={avatar} alt="Muizz Jakhar Avatar" />
         </div>
         <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
+        <Image src={crypticText} alt="crypticText" />
       </div>
     </>
   );
