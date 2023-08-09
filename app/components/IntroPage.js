@@ -12,11 +12,13 @@ const IntroPage = () => {
     <>
       <div>
         <NavBar />
-        <Image
-          className="w-full"
-          src={cyberCityDivder2}
-          alt="top city divider"
-        />
+        <div>
+          <Image
+            src={cyberCityDivder2}
+            alt="top city divider"
+            className="w-full"
+          />
+        </div>
         <div className="flex">
           <h1 className="flex-auto">
             My name is Muizz Jakhar I am a Full-stack Web Developer
@@ -24,7 +26,14 @@ const IntroPage = () => {
           <Image src={avatar} alt="Muizz Jakhar Avatar" />
         </div>
         <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
-        <Image src={crypticText} alt="crypticText" />
+        {/* <div>
+          <Image
+            src={crypticText}
+            layout="fill"
+            objectFit="cover"
+            alt="crypticText"
+          />
+        </div> */}
         <Skills />
       </div>
     </>

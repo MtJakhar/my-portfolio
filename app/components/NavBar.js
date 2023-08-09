@@ -8,7 +8,7 @@ import logo from "../../public/images/logo.png";
 
 const NavBar = () => {
   return (
-    <AppBar position="sticky" color="transparent">
+    <AppBar color="transparent">
       <Toolbar>
         <Image src={logo} alt="icon" width={50} height={50} />
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
