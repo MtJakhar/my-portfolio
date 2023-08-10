@@ -26,10 +26,10 @@ const IntroPage = () => {
           <Image src={avatar} alt="Muizz Jakhar Avatar" />
         </div>
         <Image className="w-full" src={cyberCityDivder} alt="cyberCity" />
-        <div>
-          <Image src={crypticText} className="w-full" alt="crypticText" />
+        <div className="relative justify-center items-center flex">
+          <Skills />
+          <Image src={crypticText} className="w-full z-0" alt="crypticText" />
         </div>
-        <Skills />
       </div>
     </>
   );
