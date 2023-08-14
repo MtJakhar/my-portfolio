@@ -8,24 +8,65 @@ import javascript from "../../public/images/javascript.png";
 import mui from "../../public/images/mu5.png";
 import nextjs from "../../public/images/next-js.png";
 import node from "../../public/images/node.png";
+import aws from "../../public/images/aws.png";
+import react from "../../public/images/react.png";
+import tailWindCss from "../../public/images/tailWindCss.png";
+import typescript from "../../public/images/typescript.png";
 
 const Skills = () => {
+  let firstRow = [
+    [html, "HTML"],
+    [css, "CSS"],
+    [tailWindCss, "Tailwindcss"],
+    [figma, "Figma"],
+  ];
+  let secondRow = [
+    [javascript, "JavaScript"],
+    [typescript, "TypeScript"],
+    [react, "React"],
+    [node, "NodeJS"],
+  ];
+  let thirdRow = [
+    [nextjs, "Next.JS"],
+    [aws, "AWS"],
+    [git, "Git"],
+    [mui, "MUI"],
+  ];
+
   return (
     <div className=" absolute z-10 bg-neutral-900 text-sky-400 bg-opacity-50 p-4 rounded-lg flex">
       <div>
         <h1>///.Skills.module</h1>
         <h4>loading...</h4>
         <div className="flex m-2">
-          <Image src={html} width={50} height={50} alt="html" />
-          <Image src={css} width={50} height={50} alt="css" />
-          <Image src={javascript} width={50} height={50} alt="javascript" />
-          <Image src={node} width={50} height={50} alt="node" />
+          {firstRow.map((data) => {
+            return (
+              <div className="m-3">
+                <Image src={data[0]} width={50} height={50} alt={data[1]} />
+                <p>{data[1]}</p>
+              </div>
+            );
+          })}
         </div>
         <div className="flex m-2">
-          <Image src={nextjs} width={50} height={50} alt="nextjs" />
-          <Image src={mui} width={50} height={50} alt="mui" />
-          <Image src={git} width={50} height={50} alt="git" />
-          <Image src={figma} width={50} height={50} alt="figma" />
+          {secondRow.map((data) => {
+            return (
+              <div className="m-3">
+                <Image src={data[0]} width={50} height={50} alt={data[1]} />
+                <p>{data[1]}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex m-2">
+          {thirdRow.map((data) => {
+            return (
+              <div className="m-3">
+                <Image src={data[0]} width={50} height={50} alt={data[1]} />
+                <p>{data[1]}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
