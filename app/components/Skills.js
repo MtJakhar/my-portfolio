@@ -19,14 +19,10 @@ const Skills = () => {
     [css, "CSS"],
     [tailWindCss, "Tailwindcss"],
     [figma, "Figma"],
-  ];
-  let secondRow = [
     [javascript, "JavaScript"],
     [typescript, "TypeScript"],
     [react, "React"],
     [node, "NodeJS"],
-  ];
-  let thirdRow = [
     [nextjs, "Next.JS"],
     [aws, "AWS"],
     [git, "Git"],
@@ -38,41 +34,8 @@ const Skills = () => {
       <div>
         <h1>///.Skills.module</h1>
         <h4>loading...</h4>
-        <div className="flex justify-center m-2">
+        <div className="grid grid-cols-4 gap-4">
           {firstRow.map((data) => {
-            return (
-              <div className="m-3 text-center">
-                <Image
-                  className="mx-auto"
-                  src={data[0]}
-                  width={50}
-                  height={50}
-                  alt={data[1]}
-                />
-                <p>{data[1]}</p>
-              </div>
-            );
-          })}
-        </div>
-        <div className="flex justify-center m-2">
-          {secondRow.map((data) => {
-            return (
-              <div className="m-3 text-center">
-                <Image
-                  className="mx-auto"
-                  src={data[0]}
-                  width={50}
-                  height={50}
-                  alt={data[1]}
-                />
-                <p className="mt-2">{data[1]}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="flex m-2 justify-center">
-          {thirdRow.map((data) => {
             return (
               <div className="m-3 text-center">
                 <Image
