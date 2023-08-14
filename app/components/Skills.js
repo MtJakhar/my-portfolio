@@ -38,31 +38,50 @@ const Skills = () => {
       <div>
         <h1>///.Skills.module</h1>
         <h4>loading...</h4>
-        <div className="flex m-2">
+        <div className="flex justify-center m-2">
           {firstRow.map((data) => {
             return (
-              <div className="m-3">
-                <Image src={data[0]} width={50} height={50} alt={data[1]} />
+              <div className="m-3 text-center">
+                <Image
+                  className="mx-auto"
+                  src={data[0]}
+                  width={50}
+                  height={50}
+                  alt={data[1]}
+                />
                 <p>{data[1]}</p>
               </div>
             );
           })}
         </div>
-        <div className="flex m-2">
+        <div className="flex justify-center m-2">
           {secondRow.map((data) => {
             return (
-              <div className="m-3">
-                <Image src={data[0]} width={50} height={50} alt={data[1]} />
-                <p>{data[1]}</p>
+              <div className="m-3 text-center">
+                <Image
+                  className="mx-auto"
+                  src={data[0]}
+                  width={50}
+                  height={50}
+                  alt={data[1]}
+                />
+                <p className="mt-2">{data[1]}</p>
               </div>
             );
           })}
         </div>
-        <div className="flex m-2">
+
+        <div className="flex m-2 justify-center">
           {thirdRow.map((data) => {
             return (
-              <div className="m-3">
-                <Image src={data[0]} width={50} height={50} alt={data[1]} />
+              <div className="m-3 text-center">
+                <Image
+                  className="mx-auto"
+                  src={data[0]}
+                  width={50}
+                  height={50}
+                  alt={data[1]}
+                />
                 <p>{data[1]}</p>
               </div>
             );
