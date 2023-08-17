@@ -5,6 +5,7 @@ import avatar from "../../public/images/avatar.png";
 import cyberCityDivder from "../../public/images/cyberCityDivider.png";
 import cyberCityDivder2 from "../../public/images/cyberCityDivider2.png";
 import crypticText from "../../public/images/crypticText.png";
+import Projects from "./Projects";
 import Skills from "./Skills";
 
 const IntroPage = () => {
@@ -29,6 +30,9 @@ const IntroPage = () => {
         <div className="relative justify-center items-center flex">
           <Skills />
           <Image src={crypticText} className="w-full z-0" alt="crypticText" />
+        </div>
+        <div className="justify-center items-center flex p-40">
+          <Projects />
         </div>
       </div>
     </>
