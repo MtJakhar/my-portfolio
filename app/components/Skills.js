@@ -14,19 +14,19 @@ import tailWindCss from "../../public/images/tailWindCss.png";
 import typescript from "../../public/images/typescript.png";
 
 const Skills = () => {
-  let firstRow = [
-    [html, "HTML"],
-    [css, "CSS"],
-    [tailWindCss, "Tailwindcss"],
-    [figma, "Figma"],
-    [javascript, "JavaScript"],
-    [typescript, "TypeScript"],
-    [react, "React"],
-    [node, "NodeJS"],
-    [nextjs, "Next.JS"],
-    [aws, "AWS"],
-    [git, "Git"],
-    [mui, "MUI"],
+  let skillData = [
+    { image: html, text: "HTML" },
+    { image: css, text: "CSS" },
+    { image: tailWindCss, text: "Tailwindcss" },
+    { image: figma, text: "Figma" },
+    { image: javascript, text: "JavaScript" },
+    { image: typescript, text: "TypeScript" },
+    { image: react, text: "React" },
+    { image: node, text: "NodeJS" },
+    { image: nextjs, text: "Next.JS" },
+    { image: aws, text: "AWS" },
+    { image: git, text: "Git" },
+    { image: mui, text: "MUI" },
   ];
 
   return (
@@ -35,17 +35,17 @@ const Skills = () => {
         <h1>///.Skills.module</h1>
         <h4>loading...</h4>
         <div className="grid grid-cols-4 gap-4">
-          {firstRow.map((data) => {
+          {skillData.map((data) => {
             return (
               <div className="m-3 text-center">
                 <Image
                   className="mx-auto"
-                  src={data[0]}
+                  src={data.image}
                   width={50}
                   height={50}
-                  alt={data[1]}
+                  alt={data.text}
                 />
-                <p>{data[1]}</p>
+                <p>{data.text}</p>
               </div>
             );
           })}
