@@ -31,7 +31,7 @@ const IntroPage = () => {
           <Skills />
           <Image src={crypticText} className="w-full z-0" alt="crypticText" />
         </div>
-        <div className="justify-center items-center flex p-40">
+        <div className="bg-neutral-950 justify-center items-center flex p-40">
           <Projects />
         </div>
       </div>
