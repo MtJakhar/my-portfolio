@@ -7,6 +7,7 @@ import cyberCityDivder2 from "../../public/images/cyberCityDivider2.png";
 import crypticText from "../../public/images/crypticText.png";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Contact from "./Contact";
 
 const IntroPage = () => {
   return (
@@ -33,6 +34,9 @@ const IntroPage = () => {
         </div>
         <div className="bg-neutral-950 justify-center items-center flex py-20 px-10">
           <Projects />
+        </div>
+        <div>
+          <Contact />
         </div>
       </div>
     </>
