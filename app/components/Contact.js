@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Tooltip } from "@mui/material";
 import gitHub from "../../public/images/github.png";
 import linkedIn from "../../public/images/linkedin.png";
 import twitter from "../../public/images/twitter.png";
@@ -9,19 +10,19 @@ const Contact = () => {
   let contactImages = [
     {
       image: email,
-      alt: "email",
+      alt: "Email",
     },
     {
       image: linkedIn,
-      alt: "linkedIn",
+      alt: "LinkedIn",
     },
     {
       image: gitHub,
-      alt: "github",
+      alt: "Github",
     },
     {
       image: twitter,
-      alt: "twitter|X",
+      alt: "Twitter | X",
     },
   ];
   return (
@@ -34,7 +35,14 @@ const Contact = () => {
         {contactImages.map((data) => {
           return (
             <div className="mx-2 my-3 text-center hover:scale-110">
-              <Image src={data.image} width={200} height={200} alt={data.alt} />
+              <Tooltip title={data.alt} placement="top" arrow>
+                <Image
+                  src={data.image}
+                  width={200}
+                  height={200}
+                  alt={data.alt}
+                />
+              </Tooltip>
             </div>
           );
         })}
