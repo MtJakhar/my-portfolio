@@ -35,7 +35,7 @@ const IntroPage = () => {
         <div className="bg-neutral-950 justify-center items-center flex py-20 px-10">
           <Projects />
         </div>
-        <div>
+        <div className="bg-neutral-950 justify-center items-center flex py-20 px-10">
           <Contact />
         </div>
       </div>
