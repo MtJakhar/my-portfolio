@@ -2,17 +2,22 @@ import React from "react";
 
 const NavButtons = () => {
   return (
-    // <div
-    //   id="container"
-    //   className="bg-neutral-900 bg-opacity-50 border-solid border-2 border-indigo-500 text-neutral-50 flex"
-    // >
-    //   <div className="my-1 mr-2 ml-6">Words</div>
-    //   <div className="my-1 mx-2">Words</div>
-    //   <div className="my-1 mx-2">Words</div>
-    //   <div className="my-1 ml-2 mr-6">Words</div>
-    // </div>
-    <div class="relative w-32 h-32 bg-blue-500">
-      <div class="absolute w-full h-6 -top-6 clip-polygon"></div>
+    <div
+      id="container"
+      className="bg-neutral-900 bg-opacity-50 border-solid border-2 border-indigo-500 text-indigo-500 rounded-tl-[25px] rounded-br-[25px] flex"
+    >
+      <div className="py-1 pr-2 pl-2 ml-6 hover:bg-indigo-500 hover:text-orange-500">
+        About
+      </div>
+      <div className="py-1 px-2 hover:bg-indigo-500 hover:text-orange-500">
+        Skills
+      </div>
+      <div className="py-1 px-2 hover:bg-indigo-500 hover:text-orange-500">
+        Projects
+      </div>
+      <div className="py-1 p-2 pr-6 rounded-br-[22px] text-orange-500 bg-indigo-500 hover:bg-indigo-600">
+        Contact
+      </div>
     </div>
   );
 };
