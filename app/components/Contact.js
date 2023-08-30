@@ -34,7 +34,10 @@ const Contact = () => {
       <div className="grid grid-cols-4">
         {contactImages.map((data) => {
           return (
-            <div className="mx-2 my-3 text-center hover:scale-110">
+            <div
+              key={contactImages.indexOf(data)}
+              className="mx-2 my-3 text-center hover:scale-110"
+            >
               <Tooltip title={data.alt} placement="top" arrow>
                 <Image
                   src={data.image}

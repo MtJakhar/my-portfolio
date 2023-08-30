@@ -27,9 +27,12 @@ const Projects = () => {
         <div className="grid grid-cols-3 gap-4">
           {projectsData.map((data) => {
             return (
-              <div className="mx-2 my-3 text-center">
+              <div
+                key={projectsData.indexOf(data)}
+                className="mx-2 my-3 text-center"
+              >
                 <Image
-                  className=" rounded-lg"
+                  className="rounded-lg"
                   src={data.image}
                   width={300}
                   height={300}

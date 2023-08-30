@@ -37,7 +37,7 @@ const Skills = () => {
         <div className="grid grid-cols-4 gap-4">
           {skillData.map((data) => {
             return (
-              <div className="m-3 text-center">
+              <div key={skillData.indexOf(data)} className="m-3 text-center">
                 <Image
                   className="mx-auto"
                   src={data.image}

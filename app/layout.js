@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Orbitron } from "next/font/google";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
