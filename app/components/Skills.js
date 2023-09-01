@@ -30,7 +30,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className=" absolute z-10 bg-neutral-900 text-sky-400 bg-opacity-50 p-4 rounded-lg flex">
+    <div className=" absolute z-10 bg-neutral-900 text-sky-400 bg-opacity-80 p-4 rounded-lg flex">
       <div>
         <h1>///.Skills.module</h1>
         <h4>loading...</h4>

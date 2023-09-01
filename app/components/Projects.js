@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Grid from "@mui/material/Grid";
 import fillerImage from "../../public/images/fillerImage.png";
 
 const Projects = () => {
@@ -24,12 +25,15 @@ const Projects = () => {
           <h1>///.Projects.module</h1>
           <h4>loading...</h4>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <Grid container spacing={2}>
           {projectsData.map((data) => {
             return (
-              <div
+              <Grid
+                item
+                xs={12}
+                md={4}
                 key={projectsData.indexOf(data)}
-                className="mx-2 my-3 text-center"
+                className="text-center"
               >
                 <Image
                   className="rounded-lg"
@@ -39,10 +43,10 @@ const Projects = () => {
                   alt="image"
                 />
                 <p>{data.description}</p>
-              </div>
+              </Grid>
             );
           })}
-        </div>
+        </Grid>
       </div>
     </div>
   );
