@@ -5,17 +5,15 @@ import Grid from "@mui/material/Grid";
 
 const About = () => {
   return (
-    <div>
+    <div className="lg:pb-[400px] md:pb-[250px] sm:pb-[250px]">
       <Grid container rowSpacing={2} columnSpacing={1}>
         <Grid item xs={12} md={6}>
-          <div className="w-1/2 text-5xl text-indigo-900  leading-loose ml-28">
-            <p className="text-shadow-lg">My Name is</p>
+          <div className="text-5xl text-indigo-900  leading-loose ml-28">
             <p>
-              <span className="text-fuchsia-700">Muizz</span> Jakhar
+              My Name is <span className="text-fuchsia-700">Muizz</span> Jakhar
+              I am a <span className="text-fuchsia-700">Full-Stack </span> Web
+              Developer
             </p>
-            <p>I am a</p>
-            <p className="text-fuchsia-700">Full-Stack</p>
-            <p>Web Developer</p>
           </div>
         </Grid>
         <Grid item xs={12} md={6}>

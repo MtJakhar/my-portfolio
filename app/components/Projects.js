@@ -33,10 +33,10 @@ const Projects = () => {
                 xs={12}
                 md={4}
                 key={projectsData.indexOf(data)}
-                className="text-center"
+                className=" justify-center text-center"
               >
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg "
                   src={data.image}
                   width={300}
                   height={300}
