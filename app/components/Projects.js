@@ -33,7 +33,7 @@ const Projects = () => {
                 xs={12}
                 md={4}
                 key={projectsData.indexOf(data)}
-                className=" justify-center text-center"
+                className="justify-center text-center"
               >
                 <Image
                   className="rounded-lg "
