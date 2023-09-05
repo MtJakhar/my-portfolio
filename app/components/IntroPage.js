@@ -23,12 +23,12 @@ const IntroPage = () => {
 
         <div className="relative justify-center items-center flex">
           <Image
-            className="absolute z-10 w-full -top-[55%]"
+            className="absolute z-20 w-full sm:-top-[60%] -top-[55%]"
             src={cyberCityDivder}
             alt="cyberCity"
           />
           <Image
-            className="absolute z-10 w-full -bottom-[40%]"
+            className="absolute z-20 w-full -bottom-[40%]"
             src={cyberCityDivder}
             alt="cyberCity"
           />

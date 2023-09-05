@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import css from "../../public/images/css.png";
 import figma from "../../public/images/figma2.png";
@@ -29,23 +29,46 @@ const Skills = () => {
     { image: mui, text: "MUI" },
   ];
 
+  const [imageSize, setImageSize] = useState(50);
+
+  const toggleImageChange = () => {
+    if (window.innerWidth < 768) {
+      setImageSize(40);
+    } else {
+      setImageSize(50);
+    }
+  };
+
+  useEffect(() => {
+    toggleImageChange();
+    window.addEventListener("resize", toggleImageChange);
+    return () => {
+      window.removeEventListener("resize", toggleImageChange);
+    };
+  }, []);
+
   return (
     <div className="absolute z-10 bg-neutral-900 text-neutral-100 bg-opacity-80 p-4 rounded-lg flex mx-auto my-auto">
       <div>
-        <h1>///.Skills.module</h1>
-        <h4>loading...</h4>
-        <div className="grid grid-cols-4 gap-4">
+        <div>
+          <h1>///.Skills.module</h1>
+          <h4>loading...</h4>
+        </div>
+        <div className="grid grid-cols-4 gap-">
           {skillData.map((data) => {
             return (
-              <div key={skillData.indexOf(data)} className="m-3 text-center">
+              <div
+                key={skillData.indexOf(data)}
+                className="sm:m-1 md:m-3 text-center"
+              >
                 <Image
                   className="m-auto"
                   src={data.image}
-                  width={50}
-                  height={50}
+                  width={imageSize}
+                  height={imageSize}
                   alt={data.text}
                 />
-                <p>{data.text}</p>
+                <p className="">{data.text}</p>
               </div>
             );
           })}
