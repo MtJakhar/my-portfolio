@@ -30,7 +30,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className=" absolute z-10 bg-neutral-900 text-neutral-100 bg-opacity-80 p-4 rounded-lg flex">
+    <div className="absolute z-10 bg-neutral-900 text-neutral-100 bg-opacity-80 p-4 rounded-lg flex mx-auto my-auto">
       <div>
         <h1>///.Skills.module</h1>
         <h4>loading...</h4>
@@ -39,7 +39,7 @@ const Skills = () => {
             return (
               <div key={skillData.indexOf(data)} className="m-3 text-center">
                 <Image
-                  className="mx-auto"
+                  className="m-auto"
                   src={data.image}
                   width={50}
                   height={50}

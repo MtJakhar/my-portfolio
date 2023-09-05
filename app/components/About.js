@@ -22,12 +22,14 @@ const About = () => {
   }, []);
 
   return (
-    <div className="lg:pb-[400px] md:pb-[250px] sm:pb-[250px] grid gap-4 md:grid-cols-2 ">
-      <p className="text-5xl text-indigo-900  leading-loose ml-28">
+    <div className="lg:pb-[400px] md:pb-[250px] grid gap-4 md:grid-cols-2 mx-auto">
+      <p className=" text-indigo-900  mx-auto px-10">
         My Name is <span className="text-fuchsia-700">Muizz</span> Jakhar I am a{" "}
         <span className="text-fuchsia-700">Full-Stack </span> Web Developer
       </p>
-      {isImageVisible && <Image src={avatar} alt="Muizz Jakhar Avatar" />}
+      {isImageVisible && (
+        <Image className="mx-auto" src={avatar} alt="Muizz Jakhar Avatar" />
+      )}
     </div>
   );
 };
