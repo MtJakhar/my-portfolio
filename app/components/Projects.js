@@ -42,7 +42,9 @@ const Projects = () => {
                   height={300}
                   alt="image"
                 />
-                <p className="max-w-md mx-auto">{data.description}</p>
+                <p className="max-w-md text-justify mx-auto px-4">
+                  {data.description}
+                </p>
               </div>
             );
           })}
