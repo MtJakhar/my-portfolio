@@ -22,21 +22,18 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="bg-blue-950 text-sky-400 bg-opacity-50 p-4 rounded-lg flex ">
+    <div className="bg-blue-950 text-sky-400 bg-opacity-50 p-4 rounded-lg flex">
       <div>
         <div className="mb-5">
           <h1>///.Projects.module</h1>
           <h4>loading...</h4>
         </div>
-        <Grid container spacing={2}>
+        <div className="grid md:grid-cols-3 gap-4">
           {projectsData.map((data) => {
             return (
-              <Grid
-                item
-                xs={12}
-                md={4}
-                key={projectsData.indexOf(data)}
+              <div
                 className="justify-center text-center"
+                key={projectsData.indexOf(data)}
               >
                 <Image
                   className="rounded-lg mx-auto my-3"
@@ -46,10 +43,10 @@ const Projects = () => {
                   alt="image"
                 />
                 <p className="max-w-md mx-auto">{data.description}</p>
-              </Grid>
+              </div>
             );
           })}
-        </Grid>
+        </div>
       </div>
     </div>
   );

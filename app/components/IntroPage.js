@@ -36,10 +36,10 @@ const IntroPage = () => {
           <Image src={crypticText} className="w-full z-0" alt="crypticText" />
         </div>
 
-        <div className="bg-neutral-950 justify-center items-center flex pb-20 pt-[500px] px-10">
+        <div className="bg-neutral-950 justify-center items-center flex pb-20 sm:pt-[300px] md:pt-[460px] sm:px-20 md:px-10">
           <Projects />
         </div>
-        <div className="bg-neutral-950 justify-center items-center flex py-20 px-10">
+        <div className="bg-neutral-950 justify-center items-center flex py-20 ">
           <Contact />
         </div>
       </div>
