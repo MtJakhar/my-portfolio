@@ -3,6 +3,7 @@ import Image from "next/image";
 import NavBar from "./NavBar";
 import cyberCityDivder from "../../public/images/cyberCityDivider.png";
 import cyberCityDivder2 from "../../public/images/cyberCityDivider2.png";
+import cyberCityDivderBott from "../../public/images/cyberCityDividerBott.png";
 import crypticText from "../../public/images/crypticText.png";
 import About from "./About";
 import Projects from "./Projects";
@@ -14,11 +15,7 @@ const IntroPage = () => {
     <>
       <div>
         <NavBar />
-        <Image
-          src={cyberCityDivder2}
-          alt="top city divider"
-          className="w-full"
-        />
+        <Image src={cyberCityDivder2} alt="topCityDiv" className="w-full" />
         <About />
 
         <div className="relative justify-center items-center flex">
@@ -36,12 +33,17 @@ const IntroPage = () => {
           <Image src={crypticText} className="w-full z-0" alt="crypticText" />
         </div>
 
-        <div className="bg-neutral-950 justify-center items-center flex pb-20 sm:pt-[300px] md:pt-[460px] sm:px-20 md:px-10">
+        <div className="bg-neutral-950 justify-center items-center flex pb-20 px-20 sm:pt-[300px] md:pt-[460px] sm:px-20 md:px-15">
           <Projects />
         </div>
-        <div className="bg-neutral-950 justify-center items-center flex py-20 ">
+        <div className="bg-neutral-950 justify-center items-center flex pt-10 sm:px-20 md:px-15">
           <Contact />
         </div>
+        <Image
+          src={cyberCityDivderBott}
+          alt="botCityDiv"
+          className="w-full bg-neutral-950"
+        />
       </div>
     </>
   );
