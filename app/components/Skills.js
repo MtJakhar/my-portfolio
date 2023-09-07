@@ -68,7 +68,7 @@ const Skills = () => {
                   height={imageSize}
                   alt={data.text}
                 />
-                <p className="">{data.text}</p>
+                <p>{data.text}</p>
               </div>
             );
           })}
