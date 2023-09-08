@@ -16,7 +16,6 @@ const IntroPage = () => {
       <div>
         <NavBar />
         <Image src={cyberCityDivder2} alt="topCityDiv" className="w-full" />
-        <div></div>
         <div id="about">
           <About />
         </div>
