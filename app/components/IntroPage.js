@@ -16,9 +16,12 @@ const IntroPage = () => {
       <div>
         <NavBar />
         <Image src={cyberCityDivder2} alt="topCityDiv" className="w-full" />
-        <About />
+        <div></div>
+        <div id="about">
+          <About />
+        </div>
 
-        <div className="relative justify-center items-center flex">
+        <div id="skills" className="relative justify-center items-center flex">
           <Image
             className="absolute z-20 w-full sm:-top-[60%] -top-[55%]"
             src={cyberCityDivder}
@@ -33,10 +36,16 @@ const IntroPage = () => {
           <Image src={crypticText} className="w-full z-0" alt="crypticText" />
         </div>
 
-        <div className="bg-neutral-950 justify-center items-center flex pb-20 px-20 sm:pt-[300px] md:pt-[460px] sm:px-20 md:px-15">
+        <div
+          id="projects"
+          className="bg-neutral-950 justify-center items-center flex pb-20 px-20 sm:pt-[300px] md:pt-[460px] sm:px-20 md:px-15"
+        >
           <Projects />
         </div>
-        <div className="bg-neutral-950 justify-center items-center flex pt-10 sm:px-20 md:px-15">
+        <div
+          id="contact"
+          className="bg-neutral-950 justify-center items-center flex pt-10 sm:px-20 md:px-15"
+        >
           <Contact />
         </div>
         <Image
